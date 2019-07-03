@@ -1,0 +1,26 @@
+{
+  "name": "antd-mobx-form-design",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "plutarch story --npm cnpm",
+    "build": "plutarch build",
+    "docs": "plutarch story -b",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "alfred.qiu",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "antd": "^3.20.0"
+  },
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
