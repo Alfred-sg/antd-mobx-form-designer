@@ -7,6 +7,6 @@ export { default as input } from './input';
 export { default as link } from './link';
 export { default as radio } from './radio';
 export { default as select } from './select';
-export { default as switch } from './switch';
+// export { default as switch } from './switch';
 export { default as text } from './text';
 export { default as textarea } from './textarea';

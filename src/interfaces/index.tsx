@@ -9,6 +9,10 @@ export interface Field {
   code: string,
   /** 字段label */
   label: string,
+  /** 校验规则 */
+  rules: Array<object>,
+  /** 初始值 */
+  initialValue: any,
   /** 所属表单 */
   form: Form,
 }
