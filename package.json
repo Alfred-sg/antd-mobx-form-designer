@@ -7,6 +7,7 @@
     "dev": "plutarch story --npm cnpm",
     "build": "plutarch build",
     "docs": "plutarch story -b",
+    "es": "rimraf es && tsc --outDir es",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "alfred.qiu",
@@ -16,7 +17,9 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "antd": "^3.20.0"
+    "antd": "^3.20.0",
+    "rimraf": "^2.6.3",
+    "typescript": "^3.5.2"
   },
   "keywords": [],
   "repository": {

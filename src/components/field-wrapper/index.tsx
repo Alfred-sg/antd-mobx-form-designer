@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col } from 'antd';
 import { fieldComps } from '../../utils/register';
-import { prefix } from '../../constants/index';
+import { prefix } from '../../constants';
 import { Field } from '../../interfaces';
 
 interface CompositeProps {
@@ -40,7 +40,6 @@ class FieldWrapper extends React.Component<FieldWrapperProps> {
   }
 
   render(){
-    console.log(this.context)
     const { form: { getFieldDecorator } } = this.context;
     let { label, labelCol, wrapperCol, required, type, ...rest } = this.props;
     labelCol = labelCol || this.context.labelCol || {};

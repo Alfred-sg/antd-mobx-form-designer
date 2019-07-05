@@ -37,8 +37,11 @@ export default class checkbox extends React.Component<CheckboxProps> {
     return (
       <div style={style} className={`${prefix}-checkbox-wrap`}>
         <Form.Item>
-          <Checkbox.Group {...rest} dataSource={dataSource} value={checkboxValue} 
-            onChange={this.onCheckboxChange} />
+          <Checkbox.Group {...rest} value={checkboxValue} onChange={this.onCheckboxChange}>
+            { dataSource.map(item => {
+              return <Checkbox key={item.value} value={item.value}>{item.label}</Checkbox>;
+            }) }
+          </Checkbox.Group>
         </Form.Item>
   
         { specialItemSelected && (

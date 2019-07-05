@@ -1,12 +1,16 @@
+export interface Style {
+  height?: string,
+}
+
 export interface BaseProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   [key: string]: any,
 }
 
 export interface InputProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   [key: string]: any,
 }
 
@@ -21,7 +25,7 @@ export interface Option {
 
 export interface RadioProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 是否排序 */
   order?: boolean,
   /** 是否包含其他选项 */
@@ -37,7 +41,7 @@ export interface RadioProps {
 
 export interface CheckboxProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 是否排序 */
   order?: boolean,
   /** 是否包含其他选项 */
@@ -53,7 +57,7 @@ export interface CheckboxProps {
 
 export interface LinkProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 文本 */
   text: string | number,
   [key: string]: any,
@@ -61,7 +65,7 @@ export interface LinkProps {
 
 export interface AgreementProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 文本 */
   text: string | number,
   /** 地址 */
@@ -71,7 +75,7 @@ export interface AgreementProps {
 
 export interface SwitchProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 选中项 */
   value: string,
   /** 选项列表 */
@@ -81,7 +85,7 @@ export interface SwitchProps {
 
 export interface TextProps {
   /** 样式 */
-  style?: object,
+  style?: Style,
   /** 选中项 */
   value: string,
   /** 选项列表 */

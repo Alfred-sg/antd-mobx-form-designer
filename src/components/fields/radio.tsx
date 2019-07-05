@@ -3,7 +3,7 @@ import { Form, Radio, Input } from 'antd';
 import { RadioProps } from './types';
 
 export default function radio(props: RadioProps){
-  const { style, order, special, value, dataSource, onChange, ...rest } = props;
+  const { style, order, special, value, dataSource = [], onChange, ...rest } = props;
   let specialItemSelected = false;
   let radioValue = value;
   let specialValue;
@@ -19,7 +19,11 @@ export default function radio(props: RadioProps){
   return (
     <div style={style} className='antd-mobx-form-designer-radio-wrap'>
       <Form.Item>
-        <Radio.Group {...rest} dataSource={dataSource} value={radioValue} onChange={onChange} />
+        <Radio.Group {...rest} value={radioValue} onChange={onChange}>
+          { dataSource.map(item => {
+            return <Radio key={item.value} value={item.value}>{item.label}</Radio>;
+          }) }
+        </Radio.Group>
       </Form.Item>
 
       { specialItemSelected && (
